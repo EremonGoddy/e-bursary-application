@@ -79,7 +79,7 @@ margin-top: 60px;
 }
 
 .container-fluid{
-background-image:url('C:\Users\eremo\Desktop\e-bursary main\client-side\src\image\services.jpg');
+background-image:url('C:\Users\eremo\Desktop\e-bursary main\client-side\public\image\services.jpg');
 background-size: cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -90,7 +90,7 @@ color:white;
 }
 
 .container-fluid1{
-background-image:url('C:\Users\eremo\Desktop\e-bursary main\client-side\src\image\payment.jpg');
+background-image:url('C:\Users\eremo\Desktop\e-bursary main\client-side\public\image\payment.jpg');
     background-size: cover;
     background-position:center;
     background-repeat:no-repeat;
