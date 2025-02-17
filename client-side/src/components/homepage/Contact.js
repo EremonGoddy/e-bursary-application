@@ -4,20 +4,12 @@ import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import contact from "../../image/contact.jpg";
+
 
 const Contact = () => {
-  const [hoveredLink, setHoveredLink] = useState(null);
+
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-  const linkStyle = (isHovered) => ({
-    fontSize: "1.3rem",
-    color: isHovered ? "#fff" : "#36454f",
-    backgroundColor: isHovered ? "#36454f" : "transparent",
-    borderRadius: "8px",
-    transition: "all 0.2s ease",
-    padding: "5px 10px",
-  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,9 +40,7 @@ const Contact = () => {
                 <Link
                   className="nav-link"
                   to="/"
-                  style={linkStyle(hoveredLink === "home")}
-                  onMouseEnter={() => setHoveredLink("home")}
-                  onMouseLeave={() => setHoveredLink(null)}
+             
                 >
                   Home
                 </Link>
@@ -59,9 +49,7 @@ const Contact = () => {
                 <Link
                   className="nav-link"
                   to="/about"
-                  style={linkStyle(hoveredLink === "about")}
-                  onMouseEnter={() => setHoveredLink("about")}
-                  onMouseLeave={() => setHoveredLink(null)}
+                  
                 >
                   About
                 </Link>
@@ -70,9 +58,7 @@ const Contact = () => {
                 <Link
                   className="nav-link"
                   to="/services"
-                  style={linkStyle(hoveredLink === "services")}
-                  onMouseEnter={() => setHoveredLink("services")}
-                  onMouseLeave={() => setHoveredLink(null)}
+           
                 >
                   Service
                 </Link>
@@ -81,9 +67,7 @@ const Contact = () => {
                 <Link
                   className="nav-link"
                   to="/contact"
-                  style={linkStyle(hoveredLink === "contact")}
-                  onMouseEnter={() => setHoveredLink("contact")}
-                  onMouseLeave={() => setHoveredLink(null)}
+                
                 >
                   Contact
                 </Link>
@@ -94,16 +78,7 @@ const Contact = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="container-fluid d-flex flex-column justify-content-center align-items-center text-center text-white"
-        style={{
-          backgroundImage: `url(${contact})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: "60vh",
-          marginTop: "60px",
-        }}>
+      <div className="container-fluid d-flex flex-column justify-content-center align-items-center text-center text-white">
         <div className="w-100 bg-dark bg-opacity-50 p-3 rounded">
           <h2 className="display-4 fw-bold">Contact Us</h2>
         </div>
